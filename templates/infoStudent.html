@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/insert" method="post">
+        이름 : <input type="text" name="name"><br>
+        국어 : <input type="number" name="kor"><br>
+        영어 : <input type="number" name="eng"><br>
+        수학 : <input type="number" name="math"><br>
+        <input type="submit" value="추가">
+    </form>
+    <h2>{{s['name']}}의 정보</h2>
+    국어 : {{s['kor']}}<br>
+    영어 : {{s['eng']}}<br>
+    수학 : {{s.math}}<br>
+</body>
+</html>
